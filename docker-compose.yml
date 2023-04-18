@@ -33,7 +33,7 @@ services:
     ####################################################################################################
     db:
         container_name: laravel_db
-        image: mariadb:10.5
+        image: mariadb:10.11
         ports:
             - 3306:3306
         volumes:
@@ -45,4 +45,4 @@ services:
             MYSQL_DATABASE: laravel_db_name
             MYSQL_USER: laravel_db_user
             MYSQL_PASSWORD: laravel_user_pass
-            TZ: Asia/Tokyo
+            # TZ: Asia/Tokyo

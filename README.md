@@ -3,12 +3,13 @@
 # Laravel Docker Starter
 Laravel Docker Starter Kit
 
-- PHP v8.2.5  
 - Laravel v10.7.1
+- PHP v8.2.5  
+- MariaDB v10.11
 
 # Requirements
-1. Stable version of [Docker](https://docs.docker.com/engine/install/)
-2. Compatible version of [Docker Compose](https://docs.docker.com/compose/install/#install-compose)
+- Stable version of [Docker](https://docs.docker.com/engine/install/)
+- Compatible version of [Docker Compose](https://docs.docker.com/compose/install/#install-compose)
 
 # How To Deploy
 

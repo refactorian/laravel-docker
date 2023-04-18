@@ -47,9 +47,9 @@
             "@php artisan key:generate --ansi"
         ],
         "setup": [
+            "composer install",
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "php artisan key:generate",
-            "composer install",
             "npm install",
             "npm run build"
         ]
