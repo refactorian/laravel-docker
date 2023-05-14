@@ -29,15 +29,16 @@ services:
             - php
 
     ####################################################################################################
-    # DATABASE (MariaDB)
+    # DATABASE (MySQL)
     ####################################################################################################
     db:
-        container_name: laravel_db
-        image: mariadb:10.11
+        container_name: laravel_mysql
+        image: mysql:8.0
         ports:
             - 3306:3306
         volumes:
             - .docker/db/data:/var/lib/mysql
+            - .docker/logs:/var/log/mysql
             - .docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
             - .docker/db/sql:/docker-entrypoint-initdb.d
         environment:
@@ -45,4 +46,22 @@ services:
             MYSQL_DATABASE: laravel_db_name
             MYSQL_USER: laravel_db_user
             MYSQL_PASSWORD: laravel_db_pass
-            # TZ: Asia/Tokyo
+
+    # ####################################################################################################
+    # # DATABASE (MariaDB)
+    # ####################################################################################################
+    # db:
+    #     container_name: laravel_mariadb
+    #     image: mariadb:10.11
+    #     ports:
+    #         - 3306:3306
+    #     volumes:
+    #         - .docker/db/data:/var/lib/mysql
+    #         - .docker/logs:/var/log/mysql
+    #         - .docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
+    #         - .docker/db/sql:/docker-entrypoint-initdb.d
+    #     environment:
+    #         MYSQL_ROOT_PASSWORD: root
+    #         MYSQL_DATABASE: laravel_db_name
+    #         MYSQL_USER: laravel_db_user
+    #         MYSQL_PASSWORD: laravel_db_pass
