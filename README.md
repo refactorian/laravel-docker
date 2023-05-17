@@ -1,8 +1,8 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 # Laravel Docker Starter Kit
-- Laravel v10.7.1
-- PHP v8.2.5  
+- Laravel v10.11.0
+- PHP v8.2.6
 - MySQL v8.0
 - MariaDB v10.11
 
@@ -21,13 +21,15 @@
 - `docker-compose up -d`
 
 ### Basic docker compose commands
-- Build all containers
+- Build or rebuild services
     - `docker-compose build`
-- Start all containers
+- Create and start containers
     - `docker-compose up -d`
-- Stop all containers
+- Stop and remove containers, networks
+    - `docker-compose down`
+- Stop all services
     - `docker-compose stop`
-- Restart all containers
+- Restart service containers
     - `docker-compose restart`
 
 ### Useful commands

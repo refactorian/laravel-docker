@@ -24,7 +24,7 @@ RUN curl -sL https://deb.nodesource.com/setup_19.x | bash -
 RUN apt-get install -y nodejs
 RUN npm install npm@latest -g
 RUN npm install yarn -g
-#RUN npm install -g @vue/cli
+RUN npm install -g @vue/cli
 
 WORKDIR /root
 RUN git clone https://github.com/seebi/dircolors-solarized
@@ -38,6 +38,7 @@ RUN mv composer.phar /usr/local/bin/composer
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 ENV PATH $PATH:/composer/vendor/bin
+RUN composer config --global process-timeout 3600
 
 EXPOSE 5173
 WORKDIR /var/www
