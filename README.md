@@ -5,6 +5,7 @@
 - PHP v8.2.6
 - MySQL v8.0
 - MariaDB v10.11
+- Mailhog v1.0.1
 
 # Requirements
 - Stable version of [Docker](https://docs.docker.com/engine/install/)

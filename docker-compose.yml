@@ -65,3 +65,13 @@ services:
     #         MYSQL_DATABASE: laravel_db_name
     #         MYSQL_USER: laravel_db_user
     #         MYSQL_PASSWORD: laravel_db_pass
+
+    ####################################################################################################
+    # MailHog
+    ####################################################################################################
+    mailhog:
+        container_name: laravel_mailhog
+        image: mailhog/mailhog:latest
+        ports:
+        - "8025:8025"
+        - "1025:1025"
