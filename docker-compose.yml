@@ -67,11 +67,11 @@ services:
     #         MYSQL_PASSWORD: laravel_db_pass
 
     ####################################################################################################
-    # MailHog
+    # Mailpit
     ####################################################################################################
-    mailhog:
-        container_name: laravel_mailhog
-        image: mailhog/mailhog:latest
+    mail:
+        container_name: laravel_mailpit
+        image: axllent/mailpit:latest
         ports:
-        - "8025:8025"
-        - "1025:1025"
+        - 8025:8025
+        - 1025:1025
