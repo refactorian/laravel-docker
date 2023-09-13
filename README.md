@@ -1,11 +1,15 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 # Laravel Docker Starter Kit
-- Laravel v10.11.0
+- Laravel v10.23.1
 - PHP v8.2.6
-- MySQL v8.0
+- MySQL v8.1
 - MariaDB v10.11
-- Mailpit v1.8.2
+- Mailpit v1.8.4
+- Node.js v18.17.1
+- NPM v10.1.0
+- Yarn v1.22.19
+- Vite v4.4.9
 
 # Requirements
 - Stable version of [Docker](https://docs.docker.com/engine/install/)
