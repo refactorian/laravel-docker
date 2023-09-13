@@ -9,6 +9,7 @@
 - Node.js v18.17.1
 - NPM v10.1.0
 - Yarn v1.22.19
+- Vite v4.4.9
 
 # Requirements
 - Stable version of [Docker](https://docs.docker.com/engine/install/)
