@@ -33,7 +33,7 @@ services:
     ####################################################################################################
     db:
         container_name: laravel_mysql
-        image: mysql:8.0
+        image: mysql:8.1
         ports:
             - 3306:3306
         volumes:
