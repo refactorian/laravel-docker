@@ -2,7 +2,7 @@
 
 # Laravel Docker Starter Kit
 - Laravel v10.23.1
-- PHP v8.2.6
+- PHP v8.2.10
 - MySQL v8.1
 - MariaDB v10.11
 - Mailpit v1.8.4
