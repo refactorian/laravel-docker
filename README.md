@@ -24,6 +24,9 @@
 
 ### From the second time onwards
 - `docker-compose up -d`
+- `docker-compose exec php bash`
+
+# Notes
 
 ### Basic docker compose commands
 - Build or rebuild services
@@ -36,12 +39,23 @@
     - `docker-compose stop`
 - Restart service containers
     - `docker-compose restart`
-
-### Useful commands
-- Run a command inside a container:
+- Run a command inside a container
     - `docker-compose exec [container] [command]`
 
-### TODO
+### Laravel Pint (Code Style Fixer | PHP-CS-Fixer)
+- Format all files
+    - `./vendor/bin/pint`
+- Format specific files or directories
+    - `./vendor/bin/pint app/Models`
+    - `./vendor/bin/pint app/Models/User.php`
+- Format all files with preview
+    - `./vendor/bin/pint -v`
+- Format uncommitted changes according to Git
+    - `./vendor/bin/pint --dirty`
+- Inspect all files
+  - `./vendor/bin/pint --test`
+
+# TODO
 - Improve environment 
 - Add more containers
 
