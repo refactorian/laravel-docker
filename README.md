@@ -43,6 +43,8 @@
     - `docker-compose exec [container] [command]`
 
 ### Useful Laravel Commands
+- Display basic information about your application
+    - `php artisan about`
 - Remove the configuration cache file
     - `php artisan config:clear`
 - Flush the application cache
@@ -63,8 +65,6 @@
     - `php artisan schedule:clear-cache`
 - Flush expired password reset tokens
     - `php artisan auth:clear-resets`
-- Display basic information about your application
-    - `php artisan about`
 
 ### Laravel Pint (Code Style Fixer | PHP-CS-Fixer)
 - Format all files
