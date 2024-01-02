@@ -2,9 +2,10 @@
 
 # Laravel Docker Starter Kit
 - Laravel v10.x
-- PHP v8.2.10
+- PHP v8.2.x
 - MySQL v8.1
 - MariaDB v10.11
+- phpMyAdmin v5.2.1
 - Mailpit v1.8.4
 - Node.js v18.17.1
 - NPM v10.1.0
@@ -27,6 +28,15 @@
 - `docker compose exec php bash`
 
 # Notes
+
+### Laravel App
+- URL: http://localhost
+
+### phpMyAdmin
+- URL: http://localhost:8080
+- Username: `root`
+- Password: `root`
+- Database: `refactorian`
 
 ### Basic docker compose commands
 - Build or rebuild services

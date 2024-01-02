@@ -41,9 +41,9 @@ services:
             - .docker/db/sql:/docker-entrypoint-initdb.d
         environment:
             MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: laravel_db_name
-            MYSQL_USER: laravel_db_user
-            MYSQL_PASSWORD: laravel_db_pass
+            MYSQL_DATABASE: refactorian
+            MYSQL_USER: refactorian
+            MYSQL_PASSWORD: refactorian
 
     # ####################################################################################################
     # # DATABASE (MariaDB)
@@ -62,6 +62,22 @@ services:
     #         MYSQL_DATABASE: laravel_db_name
     #         MYSQL_USER: laravel_db_user
     #         MYSQL_PASSWORD: laravel_db_pass
+
+    ####################################################################################################
+    # phpMyAdmin
+    ####################################################################################################
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - 8080:80
+        links:
+            - db
+        environment:
+            PMA_HOST: db
+            PMA_PORT: 3306
+            PMA_ARBITRARY: 1
+        volumes:
+            - .docker/phpmyadmin/sessions:/sessions
 
     ####################################################################################################
     # Mailpit
