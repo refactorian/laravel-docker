@@ -1,4 +1,5 @@
 version: '3'
+name: laravel-project
 
 services:
 
@@ -6,7 +7,6 @@ services:
     # PHP
     ####################################################################################################
     php:
-        container_name: laravel_php
         build: .docker/php
         ports:
             - 5173:5173
@@ -17,7 +17,6 @@ services:
     # Nginx
     ####################################################################################################
     nginx:
-        container_name: laravel_nginx
         image: nginx
         ports:
             - 80:80
@@ -32,7 +31,6 @@ services:
     # DATABASE (MySQL)
     ####################################################################################################
     db:
-        container_name: laravel_mysql
         image: mysql:8.1
         ports:
             - 3306:3306
@@ -51,7 +49,6 @@ services:
     # # DATABASE (MariaDB)
     # ####################################################################################################
     # db:
-    #     container_name: laravel_mariadb
     #     image: mariadb:10.11
     #     ports:
     #         - 3306:3306
@@ -70,7 +67,6 @@ services:
     # Mailpit
     ####################################################################################################
     mail:
-        container_name: laravel_mailpit
         image: axllent/mailpit:latest
         ports:
         - 8025:8025
