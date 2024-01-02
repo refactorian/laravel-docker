@@ -18,29 +18,29 @@
 # How To Deploy
 
 ### For first time only !
-- `docker-compose up -d`
-- `docker-compose exec php bash`
+- `docker compose up -d`
+- `docker compose exec php bash`
 - `composer setup`
 
 ### From the second time onwards
-- `docker-compose up -d`
-- `docker-compose exec php bash`
+- `docker compose up -d`
+- `docker compose exec php bash`
 
 # Notes
 
 ### Basic docker compose commands
 - Build or rebuild services
-    - `docker-compose build`
+    - `docker compose build`
 - Create and start containers
-    - `docker-compose up -d`
+    - `docker compose up -d`
 - Stop and remove containers, networks
-    - `docker-compose down`
+    - `docker compose down`
 - Stop all services
-    - `docker-compose stop`
+    - `docker compose stop`
 - Restart service containers
-    - `docker-compose restart`
+    - `docker compose restart`
 - Run a command inside a container
-    - `docker-compose exec [container] [command]`
+    - `docker compose exec [container] [command]`
 
 ### Useful Laravel Commands
 - Display basic information about your application
