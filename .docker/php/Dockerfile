@@ -9,8 +9,8 @@ RUN apt-get update \
   && docker-php-ext-install zip pdo_mysql pdo_pgsql pgsql
 
 RUN apt-get install -y libicu-dev \
-&& docker-php-ext-configure intl \
-&& docker-php-ext-install intl
+  && docker-php-ext-configure intl \
+  && docker-php-ext-install intl
 
 # pcov
 RUN pecl install pcov && docker-php-ext-enable pcov
