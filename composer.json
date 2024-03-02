@@ -12,12 +12,14 @@
         "laravel/tinker": "^2.8"
     },
     "require-dev": {
+        "driftingly/rector-laravel": "^1.0",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
         "phpunit/phpunit": "^10.1",
+        "rector/rector": "^1.0",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {

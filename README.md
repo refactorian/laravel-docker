@@ -77,16 +77,22 @@
 
 ### Laravel Pint (Code Style Fixer | PHP-CS-Fixer)
 - Format all files
-    - `./vendor/bin/pint`
+    - `vendor/bin/pint`
 - Format specific files or directories
-    - `./vendor/bin/pint app/Models`
-    - `./vendor/bin/pint app/Models/User.php`
+    - `vendor/bin/pint app/Models`
+    - `vendor/bin/pint app/Models/User.php`
 - Format all files with preview
-    - `./vendor/bin/pint -v`
+    - `vendor/bin/pint -v`
 - Format uncommitted changes according to Git
-    - `./vendor/bin/pint --dirty`
+    - `vendor/bin/pint --dirty`
 - Inspect all files
-  - `./vendor/bin/pint --test`
+  - `vendor/bin/pint --test`
+
+### Rector
+- Dry Run
+    - `vendor/bin/rector process --dry-run`
+- Process
+    - `vendor/bin/rector process`
 
 # TODO
 - Improve environment 
