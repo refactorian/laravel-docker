@@ -5,12 +5,13 @@
 - PHP v8.2.x
 - MySQL v8.1
 - MariaDB v10.11
-- phpMyAdmin v5.2.1
-- Mailpit v1.8.4
-- Node.js v18.17.1
-- NPM v10.1.0
-- Yarn v1.22.19
-- Vite v4.4.9
+- phpMyAdmin v5.x
+- Mailpit v1.x
+- Node.js v18.x
+- NPM v10.x
+- Yarn v1.x
+- Vite v5.x
+- Redis v7.2.x
 
 # Requirements
 - Stable version of [Docker](https://docs.docker.com/engine/install/)

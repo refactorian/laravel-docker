@@ -12,6 +12,9 @@ RUN apt-get install -y libicu-dev \
   && docker-php-ext-configure intl \
   && docker-php-ext-install intl
 
+# redis
+RUN pecl install redis && docker-php-ext-enable redis
+
 # pcov
 RUN pecl install pcov && docker-php-ext-enable pcov
 
