@@ -11,6 +11,7 @@
 - NPM v10.x
 - Yarn v1.x
 - Vite v5.x
+- Rector v1.x
 - Redis v7.2.x
 
 # Requirements
