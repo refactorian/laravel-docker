@@ -44,24 +44,6 @@ services:
             MYSQL_USER: refactorian
             MYSQL_PASSWORD: refactorian
 
-    # ####################################################################################################
-    # # DATABASE (MariaDB)
-    # ####################################################################################################
-    # db:
-    #     image: mariadb:10.11
-    #     ports:
-    #         - 3306:3306
-    #     volumes:
-    #         - .docker/db/data:/var/lib/mysql
-    #         - .docker/logs:/var/log/mysql
-    #         - .docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
-    #         - .docker/db/sql:/docker-entrypoint-initdb.d
-    #     environment:
-    #         MYSQL_ROOT_PASSWORD: root
-    #         MYSQL_DATABASE: laravel_db_name
-    #         MYSQL_USER: laravel_db_user
-    #         MYSQL_PASSWORD: laravel_db_pass
-
     ####################################################################################################
     # phpMyAdmin
     ####################################################################################################
@@ -107,3 +89,49 @@ services:
         - .docker/redis/data:/data
         ports:
         - 6379:6379
+
+    # ####################################################################################################
+    # # DATABASE (MariaDB)
+    # ####################################################################################################
+    # db:
+    #     image: mariadb:10.11
+    #     ports:
+    #         - 3306:3306
+    #     volumes:
+    #         - .docker/db/data:/var/lib/mysql
+    #         - .docker/logs:/var/log/mysql
+    #         - .docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
+    #         - .docker/db/sql:/docker-entrypoint-initdb.d
+    #     environment:
+    #         MYSQL_ROOT_PASSWORD: root
+    #         MYSQL_DATABASE: laravel_db_name
+    #         MYSQL_USER: laravel_db_user
+    #         MYSQL_PASSWORD: laravel_db_pass
+
+    ####################################################################################################
+    # PostgreSQL
+    ####################################################################################################
+    # db:
+    #     image: postgres:16
+    #     ports:
+    #         - 5432:5432
+    #     volumes:
+    #         - .docker/db/data:/var/lib/postgresql/data
+    #         - .docker/db/sql:/docker-entrypoint-initdb.d
+    #     environment:
+    #         - POSTGRES_USER=refactorian
+    #         - POSTGRES_PASSWORD=refactorian
+    #         - POSTGRES_DB=refactorian
+
+    ####################################################################################################
+    # pgAdmin
+    ####################################################################################################
+    # pgadmin:
+    #     image: dpage/pgadmin4
+    #     ports:
+    #         - 5050:80
+    #     environment:
+    #         - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+    #         - PGADMIN_DEFAULT_PASSWORD=password
+    #     depends_on:
+    #         - db

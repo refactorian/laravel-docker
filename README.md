@@ -3,8 +3,10 @@
 # Laravel Docker Starter Kit
 - Laravel v11.x
 - PHP v8.3.x
-- MySQL v8.1
+- MySQL v8.1.x (default)
 - MariaDB v10.11
+- PostgreSQL v16.x
+- pgAdmin v4.x
 - phpMyAdmin v5.x
 - Mailpit v1.x
 - Node.js v18.x
