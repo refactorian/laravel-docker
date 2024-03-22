@@ -110,10 +110,6 @@
 - Process
     - `vendor/bin/rector process`
 
-# TODO
-- Improve environment 
-- Add more containers
-
 ---
 
 ## About Laravel
