@@ -52,10 +52,9 @@
         "setup": [
             "composer install",
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "php artisan key:generate --ansi",
+            "php artisan key:generate",
             "php artisan config:cache",
-            "php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
-            "php artisan migrate --graceful --ansi",
+            "php artisan migrate",
             "npm install",
             "npm run build"
         ]

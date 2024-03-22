@@ -21,8 +21,8 @@ return RectorConfig::configure()
     ])
     ->withSets([
         SetList::DEAD_CODE,
-        LevelSetList::UP_TO_PHP_82,
-        LaravelSetList::LARAVEL_100,
+        LevelSetList::UP_TO_PHP_83,
+        LaravelSetList::LARAVEL_110,
     ])
     ->withRules([
         AddVoidReturnTypeWhereNoReturnRector::class,
