@@ -41,6 +41,9 @@
 ### Laravel App
 - URL: http://localhost
 
+### Mailpit
+- URL: http://localhost:8025
+
 ### phpMyAdmin
 - URL: http://localhost:8080
 - Server: `db`
