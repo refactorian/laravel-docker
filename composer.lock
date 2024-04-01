@@ -5687,16 +5687,16 @@
     "packages-dev": [
         {
             "name": "driftingly/rector-laravel",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/driftingly/rector-laravel.git",
-                "reference": "b5a43f683d2c32850c050fda1983828ff97b8470"
+                "reference": "47c7de91bb07c0a97df8dd1fe677c6c154608549"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/driftingly/rector-laravel/zipball/b5a43f683d2c32850c050fda1983828ff97b8470",
-                "reference": "b5a43f683d2c32850c050fda1983828ff97b8470",
+                "url": "https://api.github.com/repos/driftingly/rector-laravel/zipball/47c7de91bb07c0a97df8dd1fe677c6c154608549",
+                "reference": "47c7de91bb07c0a97df8dd1fe677c6c154608549",
                 "shasum": ""
             },
             "require": {
@@ -5716,9 +5716,9 @@
             "description": "Rector upgrades rules for Laravel Framework",
             "support": {
                 "issues": "https://github.com/driftingly/rector-laravel/issues",
-                "source": "https://github.com/driftingly/rector-laravel/tree/1.0.0"
+                "source": "https://github.com/driftingly/rector-laravel/tree/1.1.0"
             },
-            "time": "2024-02-07T18:42:55+00:00"
+            "time": "2024-03-27T16:18:46+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -6393,16 +6393,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.64",
+            "version": "1.10.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "fb9f270daffedcb5ff46275dcafe92538b1bc4bb"
+                "reference": "94779c987e4ebd620025d9e5fdd23323903950bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/fb9f270daffedcb5ff46275dcafe92538b1bc4bb",
-                "reference": "fb9f270daffedcb5ff46275dcafe92538b1bc4bb",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/94779c987e4ebd620025d9e5fdd23323903950bd",
+                "reference": "94779c987e4ebd620025d9e5fdd23323903950bd",
                 "shasum": ""
             },
             "require": {
@@ -6451,7 +6451,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-21T09:57:47+00:00"
+            "time": "2024-03-28T16:17:31+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
