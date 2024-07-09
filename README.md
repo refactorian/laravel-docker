@@ -4,7 +4,7 @@
 - Laravel v11.x
 - PHP v8.3.x
 - MySQL v8.1.x (default)
-- MariaDB v10.11
+- MariaDB v10.11.x
 - PostgreSQL v16.x
 - pgAdmin v4.x
 - phpMyAdmin v5.x
