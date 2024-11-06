@@ -6,9 +6,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "guzzle/guzzle": "*",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^11.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "wildbit/postmark-php": "^6.0"
     },
     "require-dev": {
         "driftingly/rector-laravel": "^1.0",
