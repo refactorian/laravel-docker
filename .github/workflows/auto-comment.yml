@@ -1,0 +1,33 @@
+name: Auto Comment on PRs and Issues
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  auto-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment on Issue or PR
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const message = `
+            Hi @${context.payload.sender.login} 👋
+
+            Thank you for ${context.eventName === 'issues' ? 'opening this issue!' : 'submitting this pull request!'} 🚀
+
+            ${context.eventName === 'issues'
+              ? 'I’ve noted it and will review it soon. Please include steps to reproduce, screenshots, or additional context if applicable.'
+              : 'Your PR has been received and I’ll review it as soon as possible. Ensure your code follows the contribution guidelines and that tests are updated if necessary.'}
+
+            I really appreciate your effort to improve this project! 🙌
+            `;
+            github.rest.issues.createComment({
+              issue_number: context.payload[context.eventName === 'issues' ? 'issue' : 'pull_request'].number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message,
+            });
