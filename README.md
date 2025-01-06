@@ -114,3 +114,8 @@
     - `vendor/bin/rector process --dry-run`
 - Process
     - `vendor/bin/rector process`
+
+# Alternatives
+- [Laravel Sail](https://laravel.com/docs/master/sail)
+- [Laravel Herd](https://herd.laravel.com/)
+- [Laradock](https://laradock.io/)
