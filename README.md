@@ -1,8 +1,8 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 # Laravel Docker Starter Kit
-- Laravel v11.x
-- PHP v8.3.x
+- Laravel v12.x
+- PHP v8.4.x
 - MySQL v8.1.x (default)
 - MariaDB v10.11.x
 - PostgreSQL v16.x
@@ -35,7 +35,7 @@
 # Notes
 
 ### Laravel Versions
-- [Laravel 11.x](https://github.com/refactorian/laravel-docker/tree/main)
+- [Laravel 11.x](https://github.com/refactorian/laravel-docker/tree/laravel_11x)
 - [Laravel 10.x](https://github.com/refactorian/laravel-docker/tree/laravel_10x)
 
 ### Laravel App
