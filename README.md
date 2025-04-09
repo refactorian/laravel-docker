@@ -35,6 +35,7 @@
 # Notes
 
 ### Laravel Versions
+- [Laravel 12.x](https://github.com/refactorian/laravel-docker/tree/main)
 - [Laravel 11.x](https://github.com/refactorian/laravel-docker/tree/laravel_11x)
 - [Laravel 10.x](https://github.com/refactorian/laravel-docker/tree/laravel_10x)
 
