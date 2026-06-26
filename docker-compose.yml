@@ -9,6 +9,7 @@ services:
             - 5173:5173
         volumes:
             - .:/var/www:cached
+            - .docker/php/www.conf:/usr/local/etc/php-fpm.d/www.conf
 
     ####################################################################################################
     # Nginx
@@ -30,7 +31,7 @@ services:
     db:
         image: mysql:8.1
         ports:
-            - 3306:3306
+            - 3307:3306
         volumes:
             - .docker/db/data:/var/lib/mysql
             - .docker/logs:/var/log/mysql
@@ -55,8 +56,6 @@ services:
             PMA_HOST: db
             PMA_PORT: 3306
             PMA_ARBITRARY: 1
-        volumes:
-            - .docker/phpmyadmin/sessions:/sessions
 
     ####################################################################################################
     # Adminer

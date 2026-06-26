@@ -1,7 +1,7 @@
 FROM php:8.4-fpm
 
 COPY php.ini /usr/local/etc/php/
-COPY docker.conf /usr/local/etc/php-fpm.d/docker.conf
+COPY www.conf /usr/local/etc/php-fpm.d/www.conf
 COPY .bashrc /root/
 
 # Copy the entrypoint script
@@ -62,5 +62,5 @@ EXPOSE 5173
 WORKDIR /var/www
 
 #entrypoint
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["php-fpm"]
