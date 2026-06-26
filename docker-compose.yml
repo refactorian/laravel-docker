@@ -31,7 +31,7 @@ services:
     db:
         image: mysql:8.1
         ports:
-            - 3307:3306
+            - 3306:3306
         volumes:
             - .docker/db/data:/var/lib/mysql
             - .docker/logs:/var/log/mysql
